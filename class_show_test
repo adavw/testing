@@ -1,0 +1,24 @@
+# class and 'self' testing
+
+class car():
+    def show(self):
+        print('This is the show method.')
+
+class truck():
+    def show_truck():
+        print('This is the show_truck method.')
+
+kia = car()
+kia.show()
+
+ford = truck()
+ford.show_truck()
+
+#output:
+#This is the show method.
+#Traceback (most recent call last):
+#  File "/Users/adamweeks/Documents/python/PycharmProjects/testing/scratch.py", line 15, in <module>
+#    ford.show_truck()
+#TypeError: show_truck() takes 0 positional arguments but 1 was given
+
+#Process finished with exit code 1
